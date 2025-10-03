@@ -7,6 +7,98 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    /* Mobile Color Fixes */
+@media (max-width: 768px) {
+    /* Lighten the hero section */
+    .hero {
+        background: linear-gradient(135deg, #f8fbff 0%, #edf4ff 100%);
+    }
+    
+    /* Lighten section backgrounds */
+    .services, .projects {
+        background: #ffffff;
+    }
+    
+    /* Lighten contact section */
+    .contact {
+        background: linear-gradient(135deg, #f8fbff 0%, #edf4ff 100%);
+    }
+    
+    /* Ensure text is readable */
+    .hero-text h1,
+    .hero-text .subtitle,
+    .section-title h2,
+    .about-text h3,
+    .service-card h3,
+    .project-info h3,
+    .cv-section-title {
+        color: #1e293b;
+    }
+    
+    /* Lighten card backgrounds */
+    .service-card,
+    .project-card,
+    .contact-form {
+        background: #ffffff;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+    
+    /* Improve text contrast */
+    .hero-text p,
+    .about-text p,
+    .service-card p,
+    .project-info p,
+    .section-title p,
+    .cv-item-description {
+        color: #475569;
+    }
+    
+    /* Lighten skill bars */
+    .skill-bar {
+        background: #e2e8f0;
+    }
+    
+    .skill-level {
+        background: var(--primary);
+    }
+    
+    /* Ensure buttons stand out */
+    .btn {
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+    
+    .btn:hover {
+        box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+    }
+}
+
+/* Additional mobile-specific improvements */
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+        color: #1e293b;
+    }
+    
+    .hero-text .subtitle {
+        font-size: 1.4rem;
+        color: #374151;
+    }
+    
+    .section-title h2 {
+        color: #1e293b;
+    }
+    
+    /* Ensure CV section is readable */
+    .cv-details.active {
+        background: #ffffff;
+    }
+    
+    .cv-certificate {
+        background: #f8fafc;
+        border-left: 4px solid var(--primary);
+    }
+}
+    
     /* Reset and Base Styles */
     * {
       margin: 0;
@@ -1801,7 +1893,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>&copy; 2023 Daniel Nigus. All Rights Reserved.</p>
+      <p>&copy; 2025 Daniel Nigus. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
